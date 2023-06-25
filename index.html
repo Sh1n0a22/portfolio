@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<script>
+    function toggleScroll() {
+  var bodyElement = document.body;
+
+  if (bodyElement.style.overflow === 'hidden') {
+    bodyElement.style.overflow = 'auto';
+  } else {
+    bodyElement.style.overflow = 'hidden';
+  }
+}
+</script>
+<body>
+    <div class="header">
+        <div class="logo"><a href="">Lawrence</a></div>
+
+         <input type="checkbox" id="toggle" class="input">
+
+        <div class="navigation">
+            <ul class="nav-list">
+                <li class="reservations"><a href="#">Reservations</a></li>
+                <li class="menu"><a href="#">Menu</a></li>
+                <li class="about"><a href="#">About</a></li>
+                <li class="contact"><a href="#">Contact</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><div class="order-online"><a href="">Order Online</a></div></li>
+            </ul>
+        </div>
+
+
+       
+        <label for="toggle" class="burger-icon" onclick="toggleScroll()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+    </div>
+
+    <div class="main">
+        <div class="menu-clickbait">
+            <div class="text-div">
+
+                <div>
+                    <h2>Made With Love. Simply Delicious</h2>
+                </div>
+                <div>
+                    <p>I'm a paragraph.
+                        Click here to add your own text and edit me. I’m a great place for yous to tell a
+                        story and let your users know a little more about you.</p>
+                </div>
+                <div class="view-menu-btn"><a href="#">view menu</a></div>
+            </div>
+
+            <div class="img-div"><img
+                    src="https://static.wixstatic.com/media/46dc18_3487b934a84548e090e13f5ce1bf08ad~mv2.jpg/v1/fill/w_1450,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/46dc18_3487b934a84548e090e13f5ce1bf08ad~mv2.jpg"
+                    alt="img"></div>
+        </div>
+
+
+
+
+        <div class="about-clickbait">
+            <div class="text-square">
+                <div>
+                    <h2>A Fresh and Seasonal Cuisine</h2>
+                </div>
+                <div>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a
+                        story and let your users know a little more about you.</p>
+                </div>
+                <div id="about-btn"><a href="#">About Lawrence</a></div>
+            </div>
+        </div>
+
+        <div class="reserve-table">
+            <div class="reserve-table-container">
+                <div>
+                    <h2>Reserve a Table</h2>
+                </div>
+                <div>
+                    <p>To help us find the best table for you, select the preferred party size, date, and time of your
+                        reservation
+                    <p>
+                </div>
+                <form class="reservation">
+                  <div>
+                    <div>amount of visitors</div>
+                    <select name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                   </select> 
+                 </div>
+                <div><div for="time">date</div><input type="datetime-local"></div>
+                <button class="find-table-btn"><span>find table</span></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer"> 
+            <div class="footer-container">
+                
+                <div>
+                    <div><span>Address</span></div>
+                    <p>500 Terry Francine Street</p>
+                    <p>San Francisco, CA 94158</p>
+                </div>
+                
+                <div>
+                    <div><span>Opening Hours</span></div>
+                    <p>Mon - Fri: 11am - 10pm</p>
+                    <p>Sat - Sun: 11am - 12am</p>
+                </div>
+                
+                <div>
+                    <div><span>Contact Us</span></div>
+                    <p><a href="mailto:abc@example.com?subject">some@gmail.com</a></p>
+                    <p><a href="tel:38012312312">38012312312</a></p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
